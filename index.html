@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Customer Churn Prediction</title>
+    <title>Email Guardian</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body class="welcome-page">
 
-<div class="container">
+<div class="welcome-box">
 
-    <h1>📊 Customer Churn Prediction</h1>
-    <p class="subtitle">Predict whether a customer is likely to stay or leave.</p>
+    <div class="logo">🛡️📧</div>
 
-    <form method="POST">
+    <h1>Email Guardian</h1>
 
-        <label>Tenure (Months)</label>
-        <input type="number" name="tenure" required>
+    <p>
+        Protecting your inbox from spam, scams and suspicious emails.
+    </p>
 
-        <label>Monthly Charges</label>
-        <input type="number" name="charges" required>
-
-        <label>Support Tickets</label>
-        <input type="number" name="tickets" required>
-
-        <button type="submit">Predict Now</button>
-
-    </form>
-
-    {% if result %}
-    <div class="result">
-        {{ result }}
-    </div>
-    {% endif %}
+    <a href="/signup" class="button">
+        ✨ Get Started
+    </a>
 
 </div>
 

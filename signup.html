@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Email Guardian Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="form-card">
+
+```
+<h1>🛡️ Email Guardian</h1>
+<h2>✨ User Information</h2>
+
+<form action="/check" method="POST">
+
+    <input type="text"
+           name="name"
+           placeholder="🌸 Enter Your Name"
+           required>
+
+    <input type="number"
+           name="age"
+           placeholder="🎂 Enter Your Age"
+           required>
+
+    <input type="email"
+           name="user_email"
+           placeholder="📧 Enter Your Email Address"
+           required>
+
+    <select name="occupation" required>
+        <option value="">💼 Select Occupation</option>
+        <option value="Student">🎓 Student</option>
+        <option value="Engineer">💻 Engineer</option>
+        <option value="Teacher">📚 Teacher</option>
+        <option value="Doctor">🩺 Doctor</option>
+        <option value="Business Owner">💼 Business Owner</option>
+        <option value="Software Developer">👨‍💻 Software Developer</option>
+        <option value="Freelancer">🌐 Freelancer</option>
+        <option value="Designer">🎨 Designer</option>
+        <option value="Other">✨ Other</option>
+    </select>
+
+    <textarea
+        name="email"
+        rows="10"
+        required
+        placeholder="📨 Paste the email you want to verify here..."></textarea>
+
+    <button type="submit">
+        🛡️ Verify Email
+    </button>
+
+</form>
+```
+
+</div>
+
+</body>
+</html>

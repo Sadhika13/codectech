@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Email Guardian Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="result-card">
+
+```
+<h1>🛡️ Email Guardian Result</h1>
+
+<div class="info">
+    <p><strong>🌸 Name:</strong> {{name}}</p>
+    <p><strong>🎂 Age:</strong> {{age}}</p>
+    <p><strong>💼 Occupation:</strong> {{occupation}}</p>
+</div>
+
+<h2>📨 Submitted Email</h2>
+
+<div class="email-box">
+    {{email}}
+</div>
+
+<div class="result-box" style="background-color: {{color}}">
+    <h2>{{result}}</h2>
+</div>
+
+<div class="thankyou-box">
+    ✨🌟💖 Thank You For Using Email Guardian! 💖🌟✨
+    <br><br>
+    🌸 Have a wonderful day and stay safe online! 🌸
+</div>
+
+<br>
+
+<a href="/signup" class="button">
+    🔄 Check Another Email
+</a>
+```
+
+</div>
+
+</body>
+</html>
+
