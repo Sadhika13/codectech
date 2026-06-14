@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📊 Customer Churn Prediction</h1>
+    <p class="subtitle">Predict whether a customer is likely to stay or leave.</p>
+
+    <form method="POST">
+
+        <label>Tenure (Months)</label>
+        <input type="number" name="tenure" required>
+
+        <label>Monthly Charges</label>
+        <input type="number" name="charges" required>
+
+        <label>Support Tickets</label>
+        <input type="number" name="tickets" required>
+
+        <button type="submit">Predict Now</button>
+
+    </form>
+
+    {% if result %}
+    <div class="result">
+        {{ result }}
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
